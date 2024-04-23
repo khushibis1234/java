@@ -1,0 +1,100 @@
+Q1)two number addition
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the value");
+        int number1 = scn.nextInt();
+        System.out.println("enter the value");
+        int number2 = scn.nextInt();
+
+        System.out.println(number1 + number2);
+    }
+}
+
+Q2)two number substraction
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the value");
+        int number1 = scn.nextInt();
+        System.out.println("enter the value");
+        int number2 = scn.nextInt();
+
+        System.out.println(number1 -number2);
+    }
+}
+
+Q3)multiply
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the value");
+        int number1 = scn.nextInt();
+        System.out.println("enter the value");
+        int number2 = scn.nextInt();
+
+        System.out.println(number1 *number2);
+    }
+}
+
+Q4)division
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the value");
+        int number1 = scn.nextInt();
+        System.out.println("enter the value");
+        int number2 = scn.nextInt();
+
+        System.out.println(number1/number2);
+    }
+}
+
+Q5)modular
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the value");
+        int number1 = scn.nextInt();
+        System.out.println("enter the value");
+        int number2 = scn.nextInt();
+
+        System.out.println(number1 %number2);
+    }
+}
+
+Q6)
+23
+48
+-89
+0.47
+t
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the value");
+        int number1 = scn.nextInt();
+        int number2= scn.nextInt();
+        int number3= scn.nextInt();
+        float d=scn.nextFloat();
+        char e=scn.next().charAt(0);
+
+    }
+}
+
+
