@@ -1,0 +1,78 @@
+Q1)check prime number or not
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the number");
+        int number= scn.nextInt();
+        boolean primecondition=false;
+for(int i=2;i<number;i++){
+        if(number%i==0) {
+            primecondition = true;
+            break;
+          }
+        }
+        if(primecondition) {
+            System.out.println("not prime");
+        }
+        else{
+            System.out.println("prime");
+        }
+
+    }
+}
+
+Q2)reverse number
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the number");
+        int number = scn.nextInt();
+        int rem, sum = 0;
+        while (number > 0) {
+            rem = number % 10;
+            sum = sum * 10 + rem;
+            number = number / 10;
+        }
+
+        System.out.println(sum);
+    }
+}
+
+Q3)count of number
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the number");
+        int number = scn.nextInt();
+        int count=0;
+        while(number>0){
+            count++;
+            number=number/10;
+        }
+        System.out.println(count);
+    }
+}
+
+Q4)int string mix
+   take user input and first give marks then name
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("marks");
+        int marks = Integer.parseInt(scn.nextLine());
+        System.out.println("name");
+        String name=scn.nextLine();
+
+
+        System.out.println(name+ "scored is "+marks);
+
+  }
+
+}
