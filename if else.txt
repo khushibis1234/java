@@ -1,0 +1,314 @@
+Q1)voter id
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+        if (age>=18) {
+            System.out.println("elidible");
+        } else {
+            System.out.println("not");
+        }
+    }
+}
+
+
+Q2)one number max a>10
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        if (a>=b) {
+            System.out.println("a is maximum");
+        } else {
+            System.out.println("b is maximum");
+        }
+    }
+}
+
+
+Q3)two number max a b
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b");
+        int b = sc.nextInt();
+        if (a>=b) {
+            System.out.println("a is maximum");
+        }
+        else if(b>=a) {
+            System.out.println("b is maximum");
+        }
+        else{
+            System.out.println("both are equal");
+        }
+    }
+}
+
+
+Q4)three number max a b c
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b");
+        int b = sc.nextInt();
+        System.out.println("enter the value of c");
+        int c = sc.nextInt();
+
+        if (a>=b && a>=c) {
+            System.out.println("a is maximum");
+        }
+        else if(b>=a && b>=c) {
+            System.out.println("b is maximum");
+        }
+        else if(c>=a && c>=b){
+            System.out.println("c is maximum");
+        }
+        else{
+            System.out.println("all are equal");
+        }
+    }
+}
+
+
+
+Q5)five number maximum a b c d e 
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b");
+        int b = sc.nextInt();
+        System.out.println("enter the value of c");
+        int c = sc.nextInt();
+        System.out.println("enter the value of d");
+        int d = sc.nextInt();
+        System.out.println("enter the value of e");
+        int e = sc.nextInt();
+
+        if (a>=b && a>=c && a>=d && a>=e) {
+            System.out.println("a is maximum");
+        }
+        else if(b>=a && b>=c && b>=d && b>=e) {
+            System.out.println("b is maximum");
+        }
+        else if(c>=a && c>=b && c>=d && c>=e){
+            System.out.println("c is maximum");
+        }
+        else if(d>=a && d>=b && d>=c && d>=e){
+            System.out.println("d is maximum");
+        }
+        else if(e>=a && e>=b && e>=c && e>=d){
+            System.out.println("e is maximum");
+        }
+        else{
+            System.out.println("all are equal");
+        }
+    }
+}
+
+
+
+Q6)user
+-9 negative number
+5 positive number
+0 zero
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        if (a < 0) {
+            System.out.println("negative number");
+        } else if (a > 0) {
+            System.out.println("positive integer");
+        } else if (a == 0) {
+            System.out.println("zero");
+        }
+    }
+}
+
+
+
+
+Q7)vowel consonent
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        char alpha = sc.next().charAt(0);
+        if (alpha == 'a' || alpha == 'e' || alpha == 'i' || alpha == 'o' || alpha == 'u') {
+            System.out.println("vowel");
+        } else {
+            System.out.println("other");
+        }
+    }
+}
+
+Q8)divisible by 5 and 11
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        if (a % 5 == 0 || a % 7 == 0) {
+            System.out.println("divisible");
+        } else {
+            System.out.println("not");
+        }
+    }
+}
+
+
+Q9)upper case and lower case input by user 
+a k
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        char alpha = sc.next().charAt(0);
+        if (alpha == 'q' || alpha == 'w' || alpha == 'e' || alpha == 'r' || alpha == 't' || alpha == 't' || alpha == 'y' || alpha == 'u' || alpha == 'i' || alpha == 'o' || alpha == 'p') {
+
+            System.out.println("upper line");
+        } else if (alpha == 'a' || alpha == 's' || alpha == 'd' || alpha == 'f' || alpha == 'g') {
+            System.out.println("middle line");
+        }
+    }
+
+
+}
+
+Q10)if the input is the integer then check, check number 7 0r 3 k multiple se divisible hey kya
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        if (a % 3 == 0 || a % 7 == 0) {
+            System.out.println("divisible");
+        } else {
+            System.out.println("not");
+        }
+    }
+}
+
+Q11)number swap by third variable
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        a = b;
+        b = a;
+        b = c;
+        System.out.println("the value of a is " + a);
+        System.out.println("the value of b is " + b);
+    }
+}
+
+
+Q12)number swap by two variable
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a ");
+        int a = sc.nextInt();
+        System.out.println("enter the value of b ");
+        int b = sc.nextInt();
+        a = a+b;
+        b = a-b;
+        a = a-b;
+        System.out.println("the value of a is " + a);
+        System.out.println("the value of b is " + b);
+    }
+}
+
+
+
+
+Q13)m =male
+f=feamle
+o =other
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value ");
+        char alpha = sc.next().charAt(0);
+        if (alpha  == 'm' ) {
+            System.out.println("male");
+        } else if(alpha == 'f' ){
+            System.out.println("female");
+        }
+        else if(alpha == 'o' ){
+            System.out.println("others");
+        }
+    }
+}
+
+Q14)user input even odd
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        int a = sc.nextInt();
+        if (a % 2 == 0 ) {
+            System.out.println("even");
+        } else {
+            System.out.println("not");
+        }
+    }
+}
+
+Q15)char match 
+a=>apple
+b=>ball
+c=>cat
+not match
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the value of a");
+        char alpha = sc.next().charAt(0);
+        if (alpha  == 'a' ) {
+            System.out.println("apple");
+        } else if(alpha == 'b' ){
+            System.out.println("ball");
+        }
+        else if(alpha == 'c' ){
+            System.out.println("cat");
+        }
+        else {
+            System.out.println("not match");
+        }
+    }
+}
+
+
+
+
+
+
+

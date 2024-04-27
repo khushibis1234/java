@@ -76,3 +76,32 @@ public class Main {
   }
 
 }
+Q5)count 
+1
+2
+3
+4
+5
+ import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("enter the number");
+        int num = scn.nextInt();
+        int count = 0;
+        int tempNum = num;
+        while (tempNum > 0) {
+            tempNum = tempNum / 10;
+            count++;
+        }
+        int digit = (int) Math.pow(10, count - 1);
+        while (num > 0) {
+            int leftmostDigit = num / digit;
+            System.out.println(leftmostDigit);
+            num = num % digit;
+            digit = digit / 10;
+        }
+    }
+}
