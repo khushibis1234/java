@@ -1,0 +1,27 @@
+Q1)take user input a number =4321 and inverse its value with its place value
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        int tempnum = num;
+        int result = 0;
+        int count = 0;
+
+        while (tempnum > 0) {
+            tempnum = tempnum / 10;
+            count++;
+
+        }
+        System.out.println("count no. is " + count);
+        for (int i = 1; i <= count; i++) {
+            result = result + i * (int) Math.pow(10, (num % 10) - 1);
+            num = num / 10;
+        }
+        System.out.println(result);
+    }
+    }
+
+
