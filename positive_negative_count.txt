@@ -1,0 +1,59 @@
+Q1)positive count
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int num = sc.nextInt();
+        System.out.println("enter rotational count");
+        int n=sc.nextInt();
+        int count=0;
+        int tempnum=num;
+        int answer=0;
+
+        while(tempnum>0){
+            count++;
+            tempnum/=10;
+        }
+      System.out.println(count);
+    while(n>0) {
+        answer = num % 10 * (int) Math.pow(10, count - 1) + num / 10;
+        num = answer;
+        n--;
+    }
+        System.out.println("the answer is:"+answer);
+        }
+    }
+
+Q2)  negative
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enter the number");
+        int num = sc.nextInt();
+        System.out.println("enter rotational count");
+        int n=sc.nextInt();
+        int count=0;
+        int tempnum=num;
+        int answer=0;
+
+        while(tempnum>0){
+            count++;
+            tempnum/=10;
+        }
+      System.out.println(count);
+
+        if(n<0) {n=n+count;}
+       if(n>count){ n = n%count;}
+        while(n>0) {
+        answer = num % 10 * (int) Math.pow(10, count - 1) + num / 10;
+        num = answer;
+        n--;
+    }
+        System.out.println("the answer is:"+answer);
+        }
+
+    }
