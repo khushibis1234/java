@@ -1,0 +1,49 @@
+Q1) lcm
+
+public class Main{
+    // Function to find the Greatest Common Divisor (GCD) using Euclid's Algorithm
+    public static int findGCD(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    // Function to find the Least Common Multiple (LCM)
+    public static int findLCM(int a, int b) {
+        return (a * b) / findGCD(a, b);
+    }
+
+    public static void main(String[] args) {
+        int num1 = 12;
+        int num2 = 18;
+
+        int lcm = findLCM(num1, num2);
+
+        System.out.println("LCM of " + num1 + " and " + num2 + " is: " + lcm);
+    }
+}
+
+Q2)hcf
+public class Main{
+    // Function to find the Greatest Common Divisor (GCD) using Euclid's Algorithm
+    public static int findGCD(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
+    }
+
+    public static void main(String[] args) {
+        int num1 = 12;
+        int num2 = 18;
+
+        int hcf = findGCD(num1, num2);
+
+        System.out.println("HCF of " + num1 + " and " + num2 + " is: " + hcf);
+    }
+}
